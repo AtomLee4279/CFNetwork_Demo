@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6701CA202294E6940045955E /* NetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6701CA1C2294278F0045955E /* NetWorkTool.m */; };
 		67C973A3228AA9EC00D06148 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C973A2228AA9EC00D06148 /* AppDelegate.m */; };
 		67C973A6228AA9EC00D06148 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C973A5228AA9EC00D06148 /* ViewController.m */; };
 		67C973A9228AA9EC00D06148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C973A7228AA9EC00D06148 /* Main.storyboard */; };
 		67C973AB228AA9ED00D06148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C973AA228AA9ED00D06148 /* Assets.xcassets */; };
 		67C973AE228AA9ED00D06148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67C973AC228AA9ED00D06148 /* LaunchScreen.storyboard */; };
 		67C973B1228AA9ED00D06148 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C973B0228AA9ED00D06148 /* main.m */; };
-		67C973BA228AAA1A00D06148 /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C973B9228AAA1A00D06148 /* NetworkHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6701CA1B2294278F0045955E /* NetWorkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkTool.h; sourceTree = "<group>"; };
+		6701CA1C2294278F0045955E /* NetWorkTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkTool.m; sourceTree = "<group>"; };
 		67C9739E228AA9EC00D06148 /* CFNetwork_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFNetwork_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C973A1228AA9EC00D06148 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67C973A2228AA9EC00D06148 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +80,8 @@
 		67C973B7228AA9F600D06148 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				6701CA1B2294278F0045955E /* NetWorkTool.h */,
+				6701CA1C2294278F0045955E /* NetWorkTool.m */,
 				67C973B8228AAA1A00D06148 /* NetworkHelper.h */,
 				67C973B9228AAA1A00D06148 /* NetworkHelper.m */,
 			);
@@ -154,7 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C973BA228AAA1A00D06148 /* NetworkHelper.m in Sources */,
+				6701CA202294E6940045955E /* NetWorkTool.m in Sources */,
 				67C973A6228AA9EC00D06148 /* ViewController.m in Sources */,
 				67C973B1228AA9ED00D06148 /* main.m in Sources */,
 				67C973A3228AA9EC00D06148 /* AppDelegate.m in Sources */,

@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "NetworkHelper.h"
-
+//#import "NetworkHelper.h"
+#import "NetWorkTool.h"
 @interface ViewController ()
 
 @end
@@ -24,7 +24,8 @@
 
 - (IBAction)testNetWorkBtnDidClick:(id)sender {
     
-    [[NetworkHelper shareInstance] postUrl];
+//    [[NetworkHelper shareInstance] postUrl];
+    [[NetWorkTool shareInstance] postUrl];
 }
 
 @end

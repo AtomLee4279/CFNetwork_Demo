@@ -55,21 +55,19 @@
     do {
         UInt8 buf[1024];
         numBytesRead = CFReadStreamRead(requestStream, buf, sizeof(buf));
-        
+
         if (numBytesRead > 0) {
             [responseBytes appendBytes:buf length:numBytesRead];
         }
     } while (numBytesRead > 0);
-    
     CFHTTPMessageRef response = (CFHTTPMessageRef) CFReadStreamCopyProperty(requestStream, kCFStreamPropertyHTTPResponseHeader);
+    //读取statusCode
+    CFIndex statusCode = CFHTTPMessageGetResponseStatusCode(response);
     CFHTTPMessageSetBody(response, (__bridge CFDataRef)responseBytes);
     CFReadStreamClose(requestStream);
     CFRelease(requestStream);
     CFAutorelease(response);
-    
     //转换为JSON
-    CFIndex statusCode;
-    statusCode = CFHTTPMessageGetResponseStatusCode(response);
     CFDataRef responseDataRef = CFHTTPMessageCopyBody(response);
     NSData *responseData = (__bridge NSData *)responseDataRef;
     NSString *str = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
